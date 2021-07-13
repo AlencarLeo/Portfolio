@@ -1,0 +1,29 @@
+<svg width="1846" height="1080" viewBox="0 0 1846 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="splash-svgs">
+<path id="lineSplash3" d="M1845.5 216L1270 216" stroke="url(#paint0_linear)" stroke-opacity="0.5" stroke-linecap="square"/>
+<path id="lineSplash2" d="M1630 1248.5V673" stroke="url(#paint1_linear)" stroke-opacity="0.5" stroke-linecap="square"/>
+<path id="lineSplash1" d="M650 671.5V96" stroke="url(#paint2_linear)" stroke-opacity="0.5" stroke-linecap="square"/>
+<g id="circleSplash" filter="url(#filter0_f)">
+<circle cx="53" cy="216" r="397" fill="#08FFFF" fill-opacity="0.1"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-444" y="-281" width="994" height="994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x1="1845.5" y1="337.367" x2="1265" y2="337.367" gradientUnits="userSpaceOnUse">
+<stop stop-color="#08FFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#08FFFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="1508.63" y1="1248.5" x2="1508.63" y2="668" gradientUnits="userSpaceOnUse">
+<stop stop-color="#08FFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#08FFFF"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="528.633" y1="671.5" x2="528.633" y2="91" gradientUnits="userSpaceOnUse">
+<stop stop-color="#08FFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#08FFFF"/>
+</linearGradient>
+</defs>
+</svg>
