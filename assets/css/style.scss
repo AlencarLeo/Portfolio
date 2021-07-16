@@ -76,9 +76,11 @@ body{
     .section1-container{
         max-width: 1180px;
         margin: 200px auto;
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: default;
 
         .section1-item1 h2{
             color: $cian-main;            
@@ -199,3 +201,85 @@ body{
     }
 }
 @import './sass/_splash-screen.scss';
+
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    padding: 200px 20px;
+    .section2-container{
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        "about images"
+        "know know"
+        ;
+        row-gap: 80px;
+
+        .section2-item1{
+            margin-right: 40px;
+            max-width: 550px;
+            grid-area: about;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section2-item2{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            grid-area: images;
+            display: flex;
+            justify-content: space-between;
+            .circle-photo1{
+                width: 190px;
+                height: 190px;
+                background-color: transparent;
+                border: $cian-dark 5px dashed;
+                border-radius: 50%;
+                animation: circle-photo 150s reverse infinite linear;
+                align-self: flex-end;
+            }
+
+            .circle-photo2{
+                width: 275px;
+                height: 275px;
+                background-color: transparent;
+                border: $cian-dark 5px dashed;
+                border-radius: 50%;
+                animation: circle-photo 150s infinite linear;
+                align-self: flex-start;
+            }
+        }
+
+        .section2-item3{
+            grid-area: know;
+            background-color: $black-dark;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: rgba($color: $black-dark, $alpha: .4) 10px 30px 40px;
+            .know{
+            background-color: $black-light;
+            width: 200px;
+            height: 200px;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            }
+        }
+    }
+}
+
+@keyframes circle-photo{
+    to{
+        transform: rotate(360deg);
+    }
+}
