@@ -110,10 +110,15 @@ body {
   color: #00ffff;
 }
 
+.section1 {
+  width: 100%;
+  height: 100vh;
+  padding: 200px 0px 20px;
+}
+
 .section1 .section1-container {
   max-width: 1180px;
-  margin: 200px auto;
-  padding: 20px;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,157 +174,6 @@ body {
   to {
     stroke-dasharray: 515px;
     stroke-dashoffset: 0px;
-  }
-}
-
-.bg-hero svg {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.bg-hero svg #linhaBG1 {
-  -webkit-animation: linha1 10s linear infinite;
-          animation: linha1 10s linear infinite;
-}
-
-.bg-hero svg #linhaBG2 {
-  -webkit-animation: linha2 8s linear infinite;
-          animation: linha2 8s linear infinite;
-}
-
-.bg-hero svg #linhaBG3 {
-  -webkit-animation: linha3 6s linear infinite;
-          animation: linha3 6s linear infinite;
-}
-
-.bg-hero svg #linhaBG4 {
-  -webkit-animation: linha4 9s linear infinite;
-          animation: linha4 9s linear infinite;
-}
-
-.bg-hero svg #circleBG1 {
-  animation: circle 2s infinite alternate-reverse;
-}
-
-.bg-hero svg #circleBG2 {
-  animation: circle 4s infinite alternate-reverse;
-}
-
-.bg-hero svg #circleBG3 {
-  animation: circle 3s infinite alternate-reverse;
-}
-
-.bg-hero svg #circleBG4 {
-  animation: circle 1.3s infinite alternate-reverse;
-}
-
-@-webkit-keyframes linha1 {
-  from {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-  to {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-  }
-}
-
-@keyframes linha1 {
-  from {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-  to {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-  }
-}
-
-@-webkit-keyframes linha2 {
-  from {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-  }
-  to {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-}
-
-@keyframes linha2 {
-  from {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-  }
-  to {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-}
-
-@-webkit-keyframes linha3 {
-  from {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
-  }
-  to {
-    -webkit-transform: translateY(110vh);
-            transform: translateY(110vh);
-  }
-}
-
-@keyframes linha3 {
-  from {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
-  }
-  to {
-    -webkit-transform: translateY(110vh);
-            transform: translateY(110vh);
-  }
-}
-
-@-webkit-keyframes linha4 {
-  from {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
-  }
-  to {
-    -webkit-transform: translateY(-110vh);
-            transform: translateY(-110vh);
-  }
-}
-
-@keyframes linha4 {
-  from {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
-  }
-  to {
-    -webkit-transform: translateY(-110vh);
-            transform: translateY(-110vh);
-  }
-}
-
-@-webkit-keyframes circle {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-
-@keyframes circle {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
   }
 }
 
@@ -422,8 +276,8 @@ body {
 
 .section2 {
   width: 100%;
-  height: 100vh;
-  padding: 200px 20px;
+  min-height: 100vh;
+  padding: 200px 0px 20px;
 }
 
 .section2 .section2-container {
