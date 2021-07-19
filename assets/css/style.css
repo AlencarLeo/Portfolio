@@ -35,6 +35,21 @@ h6, p, a {
   font-size: 1.125rem;
 }
 
+#cursor {
+  width: 15px;
+  height: 15px;
+  border-top: 13px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 15px solid #08FFFF;
+  position: fixed;
+  z-index: 5;
+}
+
+#cursor.afk {
+  border-left: 15px solid #008181;
+}
+
 body {
   width: 100%;
   background-color: #171717;

@@ -7,11 +7,13 @@
 
 @import './sass/_color.scss';
 @import './sass/_typograph.scss';
+@import './sass/_cursor.scss';
 
 body{
     width: 100%;
     background-color: $black-main;
 }
+
 
 ::-webkit-scrollbar{
     width: 12px;

@@ -1,0 +1,22 @@
+//DEFAULT
+#cursor{
+    width: 15px;
+    height: 15px;
+    
+    border-top: 13px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid $cian-light;
+    
+    position: fixed;
+    z-index: 5;
+}
+
+//POINTER
+
+//TEXT
+
+//AFK
+#cursor.afk{
+    border-left: 15px solid $cian-dark;
+}
