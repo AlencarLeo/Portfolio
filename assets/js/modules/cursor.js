@@ -8,13 +8,13 @@ export default function initCursor(){
         cursor.style.top = y + "px";
         cursor.style.left = x + "px";
 
-        if(x == 0 || y == 0 || x == window.innerWidth || y == window.innerHeight){
-            setTimeout(()=>{
-                cursor.classList.add('afk');
-            },2000)
-        }else{
-            cursor.classList.remove('afk');
-        }
+        // if(x == 0 || y == 0 || x == window.innerWidth || y == window.innerHeight){
+        //     setTimeout(()=>{
+        //         cursor.classList.add('afk');
+        //     },2000)
+        // }else{
+        //     cursor.classList.remove('afk');
+        // }
     }
 
     document.addEventListener('mousemove', handlecursor);

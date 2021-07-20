@@ -35,35 +35,6 @@ h6, p, a {
   font-size: 1.125rem;
 }
 
-#cursor {
-  width: 25px;
-  height: 25px;
-  background-color: #060606;
-  -webkit-clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
-          clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
-  position: fixed;
-  z-index: 4;
-}
-
-#cursor::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#08FFFF), to(#008181));
-  background: linear-gradient(#08FFFF, #008181);
-  -webkit-clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
-          clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
-  position: absolute;
-  -webkit-transform: translate(4%, 10%);
-          transform: translate(4%, 10%);
-  z-index: 4;
-}
-
-html {
-  cursor: none;
-}
-
 body {
   width: 100%;
   background-color: #171717;
@@ -116,6 +87,7 @@ body {
 
 .menu .menu-container .menu-logo svg {
   height: 100px;
+  cursor: pointer;
 }
 
 .menu .menu-container .menu-left a + a,
@@ -131,7 +103,6 @@ body {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   padding: 15px 20px;
-  cursor: none;
 }
 
 .menu .menu-container .menu-left a:hover,
@@ -142,11 +113,12 @@ body {
 .section1 {
   width: 100%;
   height: 100vh;
-  padding: 200px 0px 20px;
+  padding: 300px 0px 0px;
 }
 
 .section1 .section1-container {
   max-width: 1180px;
+  padding: 0px 20px;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +129,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: default;
 }
 
 .section1 .section1-container .section1-item1 h2 {
@@ -174,6 +147,10 @@ body {
   background: -webkit-linear-gradient(-90deg, transparent 55%, #08FFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section1 .section1-container .section1-item2 svg {
+  cursor: pointer;
 }
 
 .section1 .section1-container .section1-item2 svg:hover path {
@@ -301,11 +278,12 @@ body {
 .section2 {
   width: 100%;
   min-height: 100vh;
-  padding: 200px 0px 20px;
+  padding: 200px 0px 0px;
 }
 
 .section2 .section2-container {
   max-width: 1180px;
+  padding: 0px 20px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -397,16 +375,21 @@ body {
   margin: auto 0;
   position: relative;
   border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .section2 .section2-container .section2-item3 .know:hover img {
-  -webkit-animation: know-animation .7s forwards;
-          animation: know-animation .7s forwards;
+  -webkit-transform: translate(-50%, -120px);
+          transform: translate(-50%, -120px);
+  opacity: 0;
 }
 
 .section2 .section2-container .section2-item3 .know:hover p {
-  -webkit-animation: know-p-animation 1s forwards;
-          animation: know-p-animation 1s forwards;
+  -webkit-transform: translate(-50%, -205px);
+          transform: translate(-50%, -205px);
+  opacity: 1;
 }
 
 .section2 .section2-container .section2-item3 .know img {
@@ -415,6 +398,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 .section2 .section2-container .section2-item3 .know p {
@@ -430,6 +415,8 @@ body {
   background: linear-gradient(150deg, #08FFFF, #008181);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @-webkit-keyframes circle-photo {
@@ -443,38 +430,6 @@ body {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes know-animation {
-  to {
-    -webkit-transform: translate(-50%, -120px);
-            transform: translate(-50%, -120px);
-    opacity: 0;
-  }
-}
-
-@keyframes know-animation {
-  to {
-    -webkit-transform: translate(-50%, -120px);
-            transform: translate(-50%, -120px);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes know-p-animation {
-  to {
-    -webkit-transform: translate(-50%, -205px);
-            transform: translate(-50%, -205px);
-    opacity: 1;
-  }
-}
-
-@keyframes know-p-animation {
-  to {
-    -webkit-transform: translate(-50%, -205px);
-            transform: translate(-50%, -205px);
-    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

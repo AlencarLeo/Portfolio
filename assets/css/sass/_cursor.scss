@@ -1,33 +1,33 @@
-//DEFAULT
+// //DEFAULT
 
-#cursor{
-    width: 25px;
-    height: 25px;
-    background-color: $black-dark;
-    clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
+// #cursor{
+//     width: 25px;
+//     height: 25px;
+//     background-color: $black-dark;
+//     clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
 
-    position: fixed;
-    z-index: 4;
-}
-#cursor::after{
-    content: "";
-    display: block;
+//     position: fixed;
+//     z-index: 4;
+// }
+// #cursor::after{
+//     content: "";
+//     display: block;
 
-    width: 20px;
-    height: 20px;
-    background: linear-gradient($cian-light, $cian-dark);
-    clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
+//     width: 20px;
+//     height: 20px;
+//     background: linear-gradient($cian-light, $cian-dark);
+//     clip-path: polygon(0 0, 0 100%, 25% 70%, 65% 65%);
 
-    position: absolute;
-    transform: translate(4%, 10%);
-    z-index: 4;
-}
+//     position: absolute;
+//     transform: translate(4%, 10%);
+//     z-index: 4;
+// }
 
-//POINTER
+// //POINTER
 
-//TEXT
+// //TEXT
 
-//AFK
+// //AFK
 
 // #cursor.afk{
 
