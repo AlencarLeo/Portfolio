@@ -309,6 +309,11 @@ body {
           justify-content: space-between;
 }
 
+.section2 .section2-container .section2-item1 a {
+  color: #08FFFF;
+  text-decoration: underline;
+}
+
 .section2 .section2-container .section2-item2 {
   width: 100%;
   height: 300px;
@@ -431,5 +436,108 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.section3 {
+  width: 100%;
+  min-height: 100vh;
+  padding: 200px 0px 0px;
+}
+
+.section3 .section3-container {
+  max-width: 1180px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.section4 {
+  width: 100%;
+  min-height: 100vh;
+  padding: 200px 0px 0px;
+}
+
+.section4 .section4-container {
+  max-width: 1180px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'form map';
+}
+
+.section4 .section4-container .section4-item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section4 .section4-container .section4-item1 form {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name email' 'message message' 'submit submit';
+  gap: 10px;
+}
+
+.section4 .section4-container .section4-item1 form .write-area {
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: #060606;
+  resize: none;
+  color: #eeeeee;
+  padding: 0px 20px;
+}
+
+.section4 .section4-container .section4-item1 form .name-area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+.section4 .section4-container .section4-item1 form .email-area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+.section4 .section4-container .section4-item1 form #message {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  padding: 10px 20px;
+  height: 200px;
+}
+
+.section4 .section4-container .section4-item1 form button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: submit;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: #060606;
+  resize: none;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+.section4 .section4-container .section4-item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: map;
 }
 /*# sourceMappingURL=style.css.map */

@@ -153,6 +153,11 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            a{
+                color: $cian-light;
+                text-decoration: underline;
+            }
         }
 
         .section2-item2{
@@ -243,5 +248,84 @@ body{
 @keyframes circle-photo{
     to{
         transform: rotate(360deg);
+    }
+}
+
+.section3{
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px 0px 0px;
+    .section3-container{
+        max-width: 1180px;
+        padding: 0px 20px;
+        margin: 0 auto;
+    }
+}
+
+.section4{
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px 0px 0px;
+    .section4-container{
+        max-width: 1180px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+        'form map';
+
+        .section4-item1{
+            grid-area: form;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            form{
+                display: grid;
+                grid-template-areas: 
+                'name email'
+                'message message'
+                'submit submit';
+                gap: 10px;
+
+                .write-area{
+                    outline: none;
+                    height: 50px;
+                    width: 100%;
+                    border: none;   
+                    background-color: $black-dark;
+                    resize: none;
+                    color: $white-dark;
+                    padding: 0px 20px;                 
+                }
+
+                .name-area{
+                    grid-area: name;
+                }
+                .email-area{
+                    grid-area: email;
+                }
+                #message{
+                    grid-area: message;
+                    padding: 10px 20px; 
+                    height: 200px;
+                }
+
+                button{
+                    grid-area: submit;
+                    outline: none;
+                    height: 50px;
+                    width: 100%;
+                    border: none;   
+                    background-color: $black-dark;
+                    resize: none;
+                    color: $white-dark;
+                    cursor: pointer;
+                }
+            }
+        }
+        .section4-item2{
+            grid-area: map;
+        }
     }
 }
