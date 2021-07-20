@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, label, input {
   font-family: 'Roboto', sans-serif;
   color: #f9f9f9;
 }
@@ -482,57 +482,160 @@ body {
 }
 
 .section4 .section4-container .section4-item1 form {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name email' 'message message' 'submit submit';
-  gap: 10px;
+      grid-template-areas: 'name email' 'message message';
+  gap: 20px;
 }
 
-.section4 .section4-container .section4-item1 form .write-area {
-  outline: none;
-  height: 50px;
-  width: 100%;
-  border: none;
-  background-color: #060606;
-  resize: none;
-  color: #eeeeee;
-  padding: 0px 20px;
-}
-
-.section4 .section4-container .section4-item1 form .name-area {
+.section4 .section4-container .section4-item1 form .position-name {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
 }
 
-.section4 .section4-container .section4-item1 form .email-area {
+.section4 .section4-container .section4-item1 form .position-email {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: email;
 }
 
-.section4 .section4-container .section4-item1 form #message {
+.section4 .section4-container .section4-item1 form .position-message {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: message;
-  padding: 10px 20px;
-  height: 200px;
+  position: relative;
+  margin-top: 40px;
 }
 
-.section4 .section4-container .section4-item1 form button {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: submit;
-  outline: none;
-  height: 50px;
-  width: 100%;
+.section4 .section4-container .section4-item1 form .position-message textarea {
+  position: absolute;
+  height: 200px;
+  min-width: 100%;
   border: none;
+  outline: none;
+  padding: 10px 20px;
   background-color: #060606;
+  font-size: 1.125rem;
+  color: #fefefe;
   resize: none;
+}
+
+.section4 .section4-container .section4-item1 form .position-message textarea:focus ~ label,
+.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ label {
+  -webkit-transform: translate(-10px, -35px);
+          transform: translate(-10px, -35px);
+  color: #08FFFF;
+}
+
+.section4 .section4-container .section4-item1 form .position-message textarea:focus ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ .underline::before {
+  width: 100%;
+}
+
+.section4 .section4-container .section4-item1 form .position-message label {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
   color: #eeeeee;
-  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.section4 .section4-container .section4-item1 form .position-message .underline {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #252525;
+}
+
+.section4 .section4-container .section4-item1 form .position-message .underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #08FFFF;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.section4 .section4-container .section4-item1 form .position-name,
+.section4 .section4-container .section4-item1 form .position-email {
+  position: relative;
+}
+
+.section4 .section4-container .section4-item1 form .position-name input,
+.section4 .section4-container .section4-item1 form .position-email input {
+  position: absolute;
+  height: 40px;
+  min-width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  background-color: #060606;
+  font-size: 1.125rem;
+  color: #fefefe;
+}
+
+.section4 .section4-container .section4-item1 form .position-name input:focus ~ label,
+.section4 .section4-container .section4-item1 form .position-name input:valid ~ label,
+.section4 .section4-container .section4-item1 form .position-email input:focus ~ label,
+.section4 .section4-container .section4-item1 form .position-email input:valid ~ label {
+  -webkit-transform: translate(-10px, -35px);
+          transform: translate(-10px, -35px);
+  color: #08FFFF;
+}
+
+.section4 .section4-container .section4-item1 form .position-name input:focus ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-name input:valid ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-email input:focus ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-email input:valid ~ .underline::before {
+  width: 100%;
+}
+
+.section4 .section4-container .section4-item1 form .position-name label,
+.section4 .section4-container .section4-item1 form .position-email label {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.section4 .section4-container .section4-item1 form .position-name .underline,
+.section4 .section4-container .section4-item1 form .position-email .underline {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #252525;
+}
+
+.section4 .section4-container .section4-item1 form .position-name .underline::before,
+.section4 .section4-container .section4-item1 form .position-email .underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #08FFFF;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .section4 .section4-container .section4-item2 {
