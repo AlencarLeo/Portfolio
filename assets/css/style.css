@@ -441,7 +441,7 @@ body {
   grid-area: know;
   background-color: #060606;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,10 +462,79 @@ body {
   left: -200px;
 }
 
-.section2 .section2-container .section2-item3 .know {
+.section2 .section2-container .section2-item3 .button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.section2 .section2-container .section2-item3 #previous {
+  left: 35px;
+}
+
+.section2 .section2-container .section2-item3 #next {
+  right: -15px;
+}
+
+.section2 .section2-container .section2-item3 .slider {
+  max-width: 1000px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2 .section2-container .section2-item3 .slider .know-1 {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-2 {
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-3 {
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-4 {
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-5 {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-6 {
+  -webkit-transform: translateX(120px);
+          transform: translateX(120px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-7 {
+  -webkit-transform: translateX(140px);
+          transform: translateX(140px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know-8 {
+  -webkit-transform: translateX(160px);
+          transform: translateX(160px);
+}
+
+.section2 .section2-container .section2-item3 .slider .know {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #252525;
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   margin: auto 0;
   position: relative;
   border-radius: 10px;
@@ -474,19 +543,19 @@ body {
   transition: .5s;
 }
 
-.section2 .section2-container .section2-item3 .know:hover img {
+.section2 .section2-container .section2-item3 .slider .know:hover img {
   -webkit-transform: translate(-50%, -120px);
           transform: translate(-50%, -120px);
   opacity: 0;
 }
 
-.section2 .section2-container .section2-item3 .know:hover p {
+.section2 .section2-container .section2-item3 .slider .know:hover p {
   -webkit-transform: translate(-50%, -205px);
           transform: translate(-50%, -205px);
   opacity: 1;
 }
 
-.section2 .section2-container .section2-item3 .know img {
+.section2 .section2-container .section2-item3 .slider .know img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -496,7 +565,7 @@ body {
   transition: .7s;
 }
 
-.section2 .section2-container .section2-item3 .know p {
+.section2 .section2-container .section2-item3 .slider .know p {
   opacity: 0;
   position: absolute;
   top: calc(50% + 200px);
