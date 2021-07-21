@@ -113,7 +113,7 @@ body {
 .section1 {
   width: 100%;
   height: 100vh;
-  padding: 300px 0px 0px;
+  padding: 200px 0px 0px;
 }
 
 .section1 .section1-container {
@@ -132,32 +132,98 @@ body {
   cursor: default;
 }
 
-.section1 .section1-container .section1-item1 h2 {
-  color: #00ffff;
+.section1 .section1-container .section1-item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.section1 .section1-container .section1-item1 #left-h2 {
-  float: right;
-  background: -webkit-linear-gradient(90deg, transparent 5%, #08FFFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.section1 .section1-container .section1-item1 a i {
+  color: #fefefe;
+  font-size: 50px;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.section1 .section1-container .section1-item1 #right-h2 {
-  background: -webkit-linear-gradient(-90deg, transparent 55%, #08FFFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.section1 .section1-container .section1-item1 a i:hover {
+  color: #08FFFF;
 }
 
-.section1 .section1-container .section1-item2 svg {
+.section1 .section1-container .section1-item1 a + a {
+  margin-top: 50px;
+}
+
+.section1 .section1-container .section1-item2 {
+  max-width: 450px;
+}
+
+.section1 .section1-container .section1-item2 h2 {
+  margin-bottom: 20px;
+}
+
+.section1 .section1-container .section1-item2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section1 .section1-container .section1-item2 p {
+  color: #bbbbbb;
+  margin-bottom: 60px;
+}
+
+.section1 .section1-container .section1-item2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  color: #08FFFF;
+  position: relative;
+  border: 1px solid #08FFFF;
+}
+
+.section1 .section1-container .section1-item2 a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 39px;
+  width: 0px;
+  background: linear-gradient(130deg, #008181, #08FFFF);
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.section1 .section1-container .section1-item2 a:hover::before {
+  width: 200px;
+  z-index: -1;
+}
+
+.section1 .section1-container .section1-item2 a:hover {
+  color: #060606;
+  border: none;
+}
+
+.section1 .section1-container .section1-item3 svg {
   cursor: pointer;
 }
 
-.section1 .section1-container .section1-item2 svg:hover path {
+.section1 .section1-container .section1-item3 svg:hover path {
   stroke: #00ffff;
 }
 
-.section1 .section1-container .section1-item2 svg:hover {
+.section1 .section1-container .section1-item3 svg:hover {
   -webkit-animation: introSplash2 2s ease forwards;
           animation: introSplash2 2s ease forwards;
   stroke-dasharray: 515px;
@@ -309,14 +375,30 @@ body {
           justify-content: space-between;
 }
 
+.section2 .section2-container .section2-item1 h2 {
+  margin-bottom: 100px;
+}
+
 .section2 .section2-container .section2-item1 a {
-  color: #08FFFF;
-  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 300px;
+  margin: 40px 0;
+  background: linear-gradient(130deg, #008181, #08FFFF);
+  color: #060606;
 }
 
 .section2 .section2-container .section2-item2 {
   width: 100%;
-  height: 300px;
+  height: 370px;
   position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -358,6 +440,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: know;
   background-color: #060606;
+  position: relative;
   width: 100%;
   height: 300px;
   display: -webkit-box;
@@ -371,6 +454,12 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: rgba(6, 6, 6, 0.4) 10px 30px 40px;
           box-shadow: rgba(6, 6, 6, 0.4) 10px 30px 40px;
+}
+
+.section2 .section2-container .section2-item3 svg {
+  position: absolute;
+  top: -70px;
+  left: -200px;
 }
 
 .section2 .section2-container .section2-item3 .know {
@@ -481,11 +570,15 @@ body {
           justify-content: space-between;
 }
 
+.section4 .section4-container .section4-item1 h2 {
+  margin-bottom: 100px;
+}
+
 .section4 .section4-container .section4-item1 form {
   width: 100%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name email' 'message message';
+      grid-template-areas: 'name email' 'message message' 'submit submit';
   gap: 20px;
 }
 
@@ -507,7 +600,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: message;
   position: relative;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 .section4 .section4-container .section4-item1 form .position-message textarea {
@@ -542,7 +635,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   pointer-events: none;
-  color: #eeeeee;
+  color: #bbbbbb;
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -610,7 +703,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   pointer-events: none;
-  color: #eeeeee;
+  color: #bbbbbb;
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -636,6 +729,58 @@ body {
   background-color: #08FFFF;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.section4 .section4-container .section4-item1 form button {
+  position: relative;
+  margin-top: 200px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: submit;
+  cursor: pointer;
+  height: 40px;
+  min-width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+  color: #fefefe;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section4 .section4-container .section4-item1 form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #060606;
+  z-index: -1;
+}
+
+.section4 .section4-container .section4-item1 form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#008181), to(#08FFFF));
+  background: linear-gradient(90deg, #008181, #08FFFF);
+  z-index: -1;
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+}
+
+.section4 .section4-container .section4-item1 form button:hover::after {
+  width: 100%;
+}
+
+.section4 .section4-container .section4-item1 form button:hover {
+  color: #060606;
 }
 
 .section4 .section4-container .section4-item2 {
