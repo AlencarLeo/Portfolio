@@ -267,6 +267,11 @@ body{
                 width: 50px;
                 transform: translate(-50%, -50%);
                 top: 50%;
+                background-color: transparent;
+                color: $cian-light;
+                border: none;
+                outline: none;
+                cursor: pointer;
             }
             #previous{
                 left: 35px;
@@ -277,42 +282,15 @@ body{
 
             .slider{
                 max-width: 1000px;
-                overflow-x: scroll;
-                overflow-y: hidden;
+                overflow: hidden;
                 display: flex;
-
-                .know-1{
-                    transform: translateX(20px);
-                }
-                .know-2{
-                    transform: translateX(40px);
-                }
-                .know-3{
-                    transform: translateX(60px);
-                }
-                .know-4{
-                    transform: translateX(80px);
-                }
-                .know-5{
-                    transform: translateX(100px);
-                }
-                .know-6{
-                    transform: translateX(120px);
-                }
-                .know-7{
-                    transform: translateX(140px);
-                }
-                .know-8{
-                    transform: translateX(160px);
-                }
-
 
                 .know{
                     display: flex;
                     background-color: $black-light;
                     min-width: 200px;
                     min-height: 200px;
-                    margin: auto 0;
+                    margin: auto 20px;
                     position: relative;
                     border-radius: 10px;
                     cursor: pointer;

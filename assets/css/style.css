@@ -469,6 +469,11 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 50%;
+  background-color: transparent;
+  color: #08FFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .section2 .section2-container .section2-item3 #previous {
@@ -481,51 +486,10 @@ body {
 
 .section2 .section2-container .section2-item3 .slider {
   max-width: 1000px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.section2 .section2-container .section2-item3 .slider .know-1 {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-2 {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-3 {
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-4 {
-  -webkit-transform: translateX(80px);
-          transform: translateX(80px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-5 {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-6 {
-  -webkit-transform: translateX(120px);
-          transform: translateX(120px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-7 {
-  -webkit-transform: translateX(140px);
-          transform: translateX(140px);
-}
-
-.section2 .section2-container .section2-item3 .slider .know-8 {
-  -webkit-transform: translateX(160px);
-          transform: translateX(160px);
 }
 
 .section2 .section2-container .section2-item3 .slider .know {
@@ -535,7 +499,7 @@ body {
   background-color: #252525;
   min-width: 200px;
   min-height: 200px;
-  margin: auto 0;
+  margin: auto 20px;
   position: relative;
   border-radius: 10px;
   cursor: pointer;
