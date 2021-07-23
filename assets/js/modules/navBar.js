@@ -2,7 +2,7 @@ export default function initNavBar(){
 
 }
 
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]'); //SELECIONAR MENU
+const menuLinks = document.querySelectorAll('a[href^="#"]'); //SELECIONAR MENU
 
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");

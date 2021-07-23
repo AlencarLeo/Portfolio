@@ -403,7 +403,7 @@ body {
 
 .section2 .section2-container .section2-item1 a:hover {
   color: #fefefe;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 10px #060606;
 }
 
 .section2 .section2-container .section2-item2 {
@@ -580,6 +580,103 @@ body {
   max-width: 1180px;
   padding: 0px 20px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.section3 .section3-container .section3-item1 {
+  width: 100%;
+}
+
+.section3 .section3-container .section3-item1 ul li a {
+  width: 100px;
+  font-size: 1.125rem;
+  padding: 5px 80% 20px 5px;
+  position: relative;
+}
+
+.section3 .section3-container .section3-item1 ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
+  width: 450px;
+  height: 1px;
+  background-color: #08FFFF;
+}
+
+.section3 .section3-container .section3-item1 ul li a img {
+  position: absolute;
+  top: -50%;
+  left: -70vh;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  -webkit-transform: scale(2, 0.5) rotate(-40deg);
+          transform: scale(2, 0.5) rotate(-40deg);
+}
+
+.section3 .section3-container .section3-item1 ul li a:hover img {
+  left: 150px;
+  -webkit-transform: scale(1, 1) rotate(0);
+          transform: scale(1, 1) rotate(0);
+}
+
+.section3 .section3-container .section3-item1 li + li {
+  margin-top: 80px;
+}
+
+.section3 .section3-container .section3-item1 h2 {
+  margin-bottom: 100px;
+}
+
+.section3 .section3-container .section3-item2 {
+  width: 100%;
+}
+
+.section3 .btn-github {
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  color: #08FFFF;
+  position: relative;
+  border: 1px solid #08FFFF;
+}
+
+.section3 .btn-github::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 39px;
+  width: 0px;
+  background: linear-gradient(130deg, #008181, #08FFFF);
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.section3 .btn-github:hover::before {
+  width: 200px;
+  z-index: -1;
+}
+
+.section3 .btn-github:hover {
+  color: #060606;
+  border: none;
 }
 
 .section4 {
@@ -897,9 +994,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: default;
 }
 
-.footer span + span {
+.footer p span + span {
   margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */

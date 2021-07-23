@@ -218,7 +218,7 @@ body{
 
                 &:hover{
                     color: $white-light;
-                    text-shadow: 1px 1px 10px $blaxk-dark;
+                    text-shadow: 1px 1px 10px $black-dark;
                 }
             }
         }
@@ -356,6 +356,84 @@ body{
         max-width: 1180px;
         padding: 0px 20px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        
+        .section3-item1{
+            width: 100%;
+            ul li a{
+                width: 100px;
+                font-size: 1.125rem;
+                padding: 5px 80% 20px 5px;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    margin-top: 10px;
+                    width: 450px;
+                    height: 1px;
+                    background-color: $cian-light;
+                }
+
+                img{
+                    position: absolute;
+                    top: -50%;
+                    left: -70vh;
+                    transition: 1s ease-out;
+                    transform: scale(2, 0.5) rotate(-40deg);
+                }
+
+                &:hover img{
+                    left: 150px;
+                    transform: scale(1, 1) rotate(0);
+                }
+            }
+
+            li+li{
+                margin-top: 80px;                
+            }
+
+            h2{
+                margin-bottom: 100px;
+            }
+        }
+        .section3-item2{
+            width: 100%;
+        }
+    }
+
+    .btn-github{
+        margin: 120px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        color: $cian-light;
+        position: relative;
+        border: 1px solid $cian-light;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 39px;
+            width: 0px;
+            background: linear-gradient(130deg, $cian-dark, $cian-light);
+            transition: .7s ease;
+        }
+        &:hover::before{
+            width: 200px;
+            z-index: -1;
+        }
+        &:hover{
+            color: $black-dark;
+            border: none;
+        }  
     }
 }
 
@@ -609,10 +687,11 @@ body{
     p{
         display: flex;
         align-items: center;
-        justify-content: center
-    }
+        justify-content: center;
+        cursor: default;
 
-    span+span{
-        margin-left: 10px;
+        span+span{
+            margin-left: 10px;
+        }
     }
 }
