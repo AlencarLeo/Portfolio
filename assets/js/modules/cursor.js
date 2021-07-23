@@ -17,5 +17,7 @@ export default function initCursor(){
         // }
     }
 
-    document.addEventListener('mousemove', handlecursor);
+    ['mousemove'].forEach((userEvent)=>{
+        document.addEventListener(userEvent, handlecursor);
+    })
 }

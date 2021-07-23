@@ -96,14 +96,16 @@ body{
                     font-size: 50px;
                     cursor: pointer;
                     transition: .3s ease;
+                    padding: 15px;
     
                     &:hover{
                         color: $cian-light;
+                        transform: translateX(25px);
                     }
                 }
             }
             a+a{
-                margin-top: 50px;
+                margin-top: 30px;
             }
         }
 
@@ -212,6 +214,12 @@ body{
                 margin: 40px 0;
                 background: linear-gradient(130deg, $cian-dark, $cian-light);
                 color: $black-dark;
+                transition: .3s;
+
+                &:hover{
+                    color: $white-light;
+                    text-shadow: 1px 1px 10px $blaxk-dark;
+                }
             }
         }
 
@@ -555,5 +563,56 @@ body{
         .section4-item2{
             grid-area: map;
         }
+    }
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    padding: 60px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $cian-dark;
+    }
+
+    .footer-item1{
+        display: flex;
+        a{
+            i{
+                color: $white-light;
+                font-size: 30px;
+                cursor: pointer;
+                transition: .3s ease;
+                padding: 10px;
+                &:hover{
+                    color: $cian-light;
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        a+a{
+            margin-left: 15px;
+        }   
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    span+span{
+        margin-left: 10px;
     }
 }

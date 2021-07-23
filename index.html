@@ -23,13 +23,13 @@
 
 
     <!--SPLASH-SCREEN-->
-    <div id="splash-screen">
+    <!-- <div id="splash-screen">
         <svg id="LA" width="197" height="496" viewBox="0 0 197 496" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="L" d="M3 0V323.729H194" stroke="#08FFFF" stroke-width="5"/>
             <path id="A" d="M3 494.729L129.254 171L194 323.153" stroke="#08FFFF" stroke-width="5"/>
         </svg>
 
-        <!-- <svg id="splash-svgs" viewBox="0 0 1846 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="splash-svgs" viewBox="0 0 1846 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
             <path id="lineSplash3" d="M1845.5 216L1270 216" stroke="url(#paint0_linear2)" stroke-opacity="0.5" stroke-linecap="square"/>
             <path id="lineSplash2" d="M1630 1248.5V673" stroke="url(#paint1_linear2)" stroke-opacity="0.5" stroke-linecap="square"/>
@@ -57,10 +57,10 @@
             <stop offset="1" stop-color="#08FFFF"/>
             </linearGradient>
             </defs>
-        </svg>       -->
+        </svg>      
     </div>
     <div id="splash-aux">
-    </div>
+    </div> -->
 
     <!--HEADER-->
     <header class="menu">
@@ -68,8 +68,8 @@
         <div class="menu-container">
 
             <nav class="menu-left">
-                <a href="">Home</a>
-                <a href="">About</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
             </nav>
     
             <div class="menu-logo">
@@ -82,8 +82,8 @@
             </div>
     
             <nav class="menu-right">
-                <a href="">Portfolio</a>
-                <a href="">Contact</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </nav>
 
         </div>
@@ -91,7 +91,7 @@
     </header>
 
     <!--SECTION1-->
-    <section class="section1">
+    <section class="section1" id="home">
         <div class="section1-container">
 
             <div class="section1-item1">
@@ -119,7 +119,7 @@
         </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" id="about">
         <div class="section2-container">
             <div class="section2-item1">
                 <h2>About</h2>
@@ -157,8 +157,8 @@
                     <div class="know know-1"><img src="assets/img/CSS.svg" alt=""><p>6 months</p></div>
                     <div class="know know-2"><img src="assets/img/JS.svg" alt=""><p>3 months</p></div>
                     <div class="know know-3"><img src="assets/img/SASS.svg" alt=""><p>1 month</p></div>
-                    <div class="know know-4"><img src="" alt=""></div>
-                    <div class="know know-5"><img src="" alt=""></div>
+                    <div class="know know-4"><img src="assets/img/C.svg" alt=""><p>5 months</p></div>
+                    <div class="know know-5"><img src="assets/img/CPP.svg" alt=""><p>5 months</p></div>
                     <div class="know know-6"><img src="" alt=""></div>
                     <div class="know know-7"><img src="" alt=""></div>
                     <div class="know know-8"><img src="" alt=""></div>
@@ -168,13 +168,13 @@
         </div>
     </section>
 
-    <section class="section3">
+    <section class="section3" id="portfolio">
         <div class="section3-container">
             <h2>Portfolio</h2>
         </div>
     </section>
 
-    <section class="section4">
+    <section class="section4" id="contact">
         <div class="section4-container">
             <div class="section4-item1">
                 <h2>Contact</h2>
@@ -206,8 +206,21 @@
         </div>
     </section>
 
-    <footer>
-        
+    <footer class="footer">
+        <p>
+            <span>2021 | </span>
+            <span><svg width="11.5" height="26.75" viewBox="0 0 46 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 3V0.5H1.5V3H6.5ZM4 68.3595H1.5V70.8595H4V68.3595ZM42.5621 70.8595C43.9428 70.8595 45.0621 69.7402 45.0621 68.3595C45.0621 66.9788 43.9428 65.8595 42.5621 65.8595V70.8595ZM1.5 3V68.3595H6.5V3H1.5ZM4 70.8595H42.5621V65.8595H4V70.8595Z" fill="#F9F9F9"/>
+                <path d="M1.67086 102.092L0.7625 104.421L5.42077 106.238L6.32914 103.908L1.67086 102.092ZM29.4902 37.6405L31.7906 36.6616L29.3893 31.0187L27.1611 36.7322L29.4902 37.6405ZM40.2617 69.3384C40.8023 70.6088 42.2705 71.2005 43.541 70.6599C44.8115 70.1192 45.4031 68.6511 44.8625 67.3806L40.2617 69.3384ZM6.32914 103.908L31.8193 38.5489L27.1611 36.7322L1.67086 102.092L6.32914 103.908ZM27.1898 38.6194L40.2617 69.3384L44.8625 67.3806L31.7906 36.6616L27.1898 38.6194Z" fill="#F9F9F9"/>
+            </svg></span>
+            <span>Leonardo Alencar</span>
+        </p>
+
+        <div class="footer-item1">
+            <a href="https://github.com/AlencarLeo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/leonardo-alencar-5749aa1b0/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/leonardoaprado/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 
 

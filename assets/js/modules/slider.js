@@ -8,21 +8,24 @@ export default function initSlider(){
     const tamanho = imgs.length - 3;
 
     btns.forEach((btn)=>{
-        btn.addEventListener('click', ()=>{
-            if(event.target.id === 'previous'){
-                if(index != 1){
-                    index--;
-                    translatex +=230;
-                }
-            }else{
-                if(index != tamanho){
-                    index++;
-                    translatex -=230;
-                }
-            }
+        ['touchstart', 'click'].forEach((userEvent)=>{
+            btn.addEventListener(userEvent, (event)=>{
 
-            knowDiv.forEach((div)=>{
-                div.style.transform = `translateX(${translatex}px)`;
+                if(event.target.id == 'previous' || event.target.classList.contains("fa-chevron-left")){
+                    if(index != 1){
+                        index--;
+                        translatex +=230;
+                    }
+                }else if(event.target.id == 'next' || event.target.classList.contains("fa-chevron-right")){
+                    if(index != tamanho){
+                        index++;
+                        translatex -=230;
+                    }
+                }
+    
+                knowDiv.forEach((div)=>{
+                    div.style.transform = `translateX(${translatex}px)`;
+                })
             })
         })
     })
