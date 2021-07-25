@@ -163,28 +163,28 @@
         <div class="section4-container">
             <div class="section4-item1">
                 <h2>Contact</h2>
-                <form action="">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="59fce300-7d53-49c7-b0ce-00c2252120b6">
 
                     <div class="position-name">
-                        <input type="text" required>
+                        <input type="text" name="name" id="name" required>
                         <label for="">name</label>
                         <div class="underline"></div>
                     </div>
 
                     <div class="position-email">
-                        <input type="text" required>
+                        <input type="text" name="email" id="email" required>
                         <label for="">email</label>
                         <div class="underline"></div>
                     </div>
 
                     <div class="position-message">
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <textarea cols="30" rows="10" name="message" id="message" required></textarea>
                         <label for="">message</label>
                         <div class="underline"></div>
                     </div>
 
-                    <button>send message</button>
-                </form>
+                    <button><input type="submit" value="send message" class="submit" id="submit" /></button>
             </div>
 
             <div class="section4-item2"></div>
