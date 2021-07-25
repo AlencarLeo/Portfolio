@@ -804,14 +804,16 @@ body {
 }
 
 .section4 .section4-container .section4-item1 form .position-message textarea:focus ~ label,
-.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ label {
+.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ label,
+.section4 .section4-container .section4-item1 form .position-message textarea.error ~ label {
   -webkit-transform: translate(-10px, -35px);
           transform: translate(-10px, -35px);
-  color: #08FFFF;
+  color: var(--labelColor, #08FFFF);
 }
 
 .section4 .section4-container .section4-item1 form .position-message textarea:focus ~ .underline::before,
-.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ .underline::before {
+.section4 .section4-container .section4-item1 form .position-message textarea:valid ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-message textarea.error ~ .underline::before {
   width: 100%;
 }
 
@@ -843,9 +845,9 @@ body {
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: #08FFFF;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  background-color: var(--beforeUnderlineColor, #08FFFF);
+  -webkit-transition: var(--beforeUnderlineWidth, all 0.3s ease-in-out);
+  transition: var(--beforeUnderlineWidth, all 0.3s ease-in-out);
 }
 
 .section4 .section4-container .section4-item1 form .position-name,
@@ -868,17 +870,21 @@ body {
 
 .section4 .section4-container .section4-item1 form .position-name input:focus ~ label,
 .section4 .section4-container .section4-item1 form .position-name input:valid ~ label,
+.section4 .section4-container .section4-item1 form .position-name input.error ~ label,
 .section4 .section4-container .section4-item1 form .position-email input:focus ~ label,
-.section4 .section4-container .section4-item1 form .position-email input:valid ~ label {
+.section4 .section4-container .section4-item1 form .position-email input:valid ~ label,
+.section4 .section4-container .section4-item1 form .position-email input.error ~ label {
   -webkit-transform: translate(-10px, -35px);
           transform: translate(-10px, -35px);
-  color: #08FFFF;
+  color: var(--labelColor, #08FFFF);
 }
 
 .section4 .section4-container .section4-item1 form .position-name input:focus ~ .underline::before,
 .section4 .section4-container .section4-item1 form .position-name input:valid ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-name input.error ~ .underline::before,
 .section4 .section4-container .section4-item1 form .position-email input:focus ~ .underline::before,
-.section4 .section4-container .section4-item1 form .position-email input:valid ~ .underline::before {
+.section4 .section4-container .section4-item1 form .position-email input:valid ~ .underline::before,
+.section4 .section4-container .section4-item1 form .position-email input.error ~ .underline::before {
   width: 100%;
 }
 
@@ -913,9 +919,9 @@ body {
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: #08FFFF;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  background-color: var(--beforeUnderlineColor, #08FFFF);
+  -webkit-transition: var(--beforeUnderlineWidth, all 0.3s ease-in-out);
+  transition: var(--beforeUnderlineWidth, all 0.3s ease-in-out);
 }
 
 .section4 .section4-container .section4-item1 form button {

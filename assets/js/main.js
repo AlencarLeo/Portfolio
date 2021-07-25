@@ -15,19 +15,47 @@ function handleerror(event){
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const message = document.getElementById('message');
+
+    //Name variables
     const underlineName = document.querySelector('.position-name .underline');
+    const inputName = document.querySelector('.position-name input');
+    const labelName = document.querySelector('.position-name label')
+
+    //Email variables
     const underlineEmail = document.querySelector('.position-email .underline');
+    const inputEmail = document.querySelector('.position-email input');
+    const labelEmail = document.querySelector('.position-email label')
+
+    //Message variables
     const underlineMessage = document.querySelector('.position-message .underline');
+    const inputMessage = document.querySelector('.position-message textarea');
+    const labelMessage = document.querySelector('.position-message label')
+    
 
     if(name.value == ''){
-        underlineName.style.backgroundColor = 'red'
+        underlineName.style.setProperty('--beforeUnderlineColor','red');
+        underlineName.style.setProperty('--beforeUnderlineWidth','width .3s ease-in-out');
+
+        labelName.style.setProperty('--labelColor','red');
+
+        inputName.classList.add('error');        
     }
     if(message.value == ''){
-        underlineMessage.style.backgroundColor = 'red'
+        underlineMessage.style.setProperty('--beforeUnderlineColor','red');
+        underlineMessage.style.setProperty('--beforeUnderlineWidth','width .3s ease-in-out');
+
+        labelMessage.style.setProperty('--labelColor','red');
+
+        inputMessage.classList.add('error'); 
     }
 
     if(email.value == '' || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 || email.value.indexOf('.') - email.value.indexOf('@') == 1 || email.value.indexOf('@') == email.value.length || email.value.indexOf('.') == email.value.length ){
-        underlineEmail.style.backgroundColor = 'red'
+        underlineEmail.style.setProperty('--beforeUnderlineColor','red');
+        underlineEmail.style.setProperty('--beforeUnderlineWidth','width .3s ease-in-out');
+
+        labelEmail.style.setProperty('--labelColor','red');
+
+        inputEmail.classList.add('error');      
     }
 }
 

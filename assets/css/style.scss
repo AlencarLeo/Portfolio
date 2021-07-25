@@ -527,13 +527,15 @@ body{
                         resize: none;
 
                         &:focus ~ label,
-                        &:valid ~ label{
+                        &:valid ~ label,
+                        &.error ~ label{
                             transform: translate(-10px, -35px);
-                            color: $cian-light;
+                            color: var(--labelColor ,$cian-light);
                         }
 
                         &:focus ~ .underline::before,
-                        &:valid ~ .underline::before{
+                        &:valid ~ .underline::before,
+                        &.error ~ .underline::before{
                             width: 100%;
                         }
                     }
@@ -564,8 +566,8 @@ body{
                             left: 0;
                             width: 0%;
                             height: 3px;
-                            background-color: $cian-light;
-                            transition: all .3s ease-in-out;
+                            background-color: var(--beforeUnderlineColor ,$cian-light);
+                            transition: var(--beforeUnderlineWidth, all .3s ease-in-out);
                         }
                     }
                 }
@@ -586,13 +588,15 @@ body{
                         color: $white-light;
 
                         &:focus ~ label,
-                        &:valid ~ label{
+                        &:valid ~ label,
+                        &.error ~ label{
                             transform: translate(-10px, -35px);
-                            color: $cian-light;
+                            color: var(--labelColor ,$cian-light);
                         }
 
                         &:focus ~ .underline::before,
-                        &:valid ~ .underline::before{
+                        &:valid ~ .underline::before,
+                        &.error ~ .underline::before{
                             width: 100%;
                         }
                     }
@@ -623,8 +627,8 @@ body{
                             left: 0;
                             width: 0%;
                             height: 3px;
-                            background-color: $cian-light;
-                            transition: all .3s ease-in-out;
+                            background-color: var(--beforeUnderlineColor ,$cian-light);
+                            transition: var(--beforeUnderlineWidth, all .3s ease-in-out);
                         }
                     }
                 }
