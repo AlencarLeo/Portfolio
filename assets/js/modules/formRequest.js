@@ -52,5 +52,8 @@ export default function initFormRequest(){
         }
     }
 
-    btn.addEventListener('click', handleerror);
+    ['click', 'touchstart'].forEach((userEvent)=>{
+        btn.addEventListener(userEvent, handleerror);
+    })
+    
 }
