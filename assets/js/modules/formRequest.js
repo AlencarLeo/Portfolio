@@ -33,6 +33,15 @@ export default function initFormRequest(){
 
             inputName.classList.add('error');        
         }
+        if(name.value != ''){
+            underlineName.style.setProperty('--beforeUnderlineColor','#08FFFF');
+
+            labelName.style.setProperty('--labelColor','#08FFFF');
+
+            inputName.classList.remove('error');        
+        }
+
+
         if(message.value == ''){
             underlineMessage.style.setProperty('--beforeUnderlineColor','red');
             underlineMessage.style.setProperty('--beforeUnderlineWidth','width .3s ease-in-out');
@@ -41,6 +50,14 @@ export default function initFormRequest(){
 
             inputMessage.classList.add('error'); 
         }
+        if(message.value != ''){
+            underlineMessage.style.setProperty('--beforeUnderlineColor','#08FFFF');
+
+            labelMessage.style.setProperty('--labelColor','#08FFFF');
+
+            inputMessage.classList.remove('error'); 
+        }
+
 
         if(email.value == '' || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 || email.value.indexOf('.') - email.value.indexOf('@') == 1 || email.value.indexOf('@') == email.value.length || email.value.indexOf('.') == email.value.length ){
             underlineEmail.style.setProperty('--beforeUnderlineColor','red');
@@ -49,6 +66,13 @@ export default function initFormRequest(){
             labelEmail.style.setProperty('--labelColor','red');
 
             inputEmail.classList.add('error');      
+        }
+        if(email.value != '' && email.value.indexOf('@') != -1 && email.value.indexOf('.') != -1 && email.value.indexOf('.') - email.value.indexOf('@') != 1 && email.value.indexOf('@') != email.value.length && email.value.indexOf('.') != email.value.length ){
+            underlineEmail.style.setProperty('--beforeUnderlineColor','#07FFFF');
+
+            labelEmail.style.setProperty('--labelColor','#07FFFF');
+
+            inputEmail.classList.remove('error');      
         }
     }
 

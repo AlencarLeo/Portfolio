@@ -112,6 +112,12 @@ body {
   color: #00ffff;
 }
 
+.menu .menu-container .hamburguer-menu {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+}
+
 .section1 {
   width: 100%;
   height: 100vh;
@@ -728,7 +734,7 @@ body {
 
 .section4 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 200px 0px 0px;
 }
 
@@ -1062,5 +1068,45 @@ body {
 
 .footer p span + span {
   margin-left: 10px;
+}
+
+@media (max-width: 1480px) {
+  body .section2 .section2-container .section2-item3 svg {
+    width: 120px;
+    left: -10px;
+    top: -100px;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@media (max-width: 1265px) {
+  body .section2 .section2-container .section2-item2 .circle-photo1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1190px) {
+  body .section2 .section2-container .section2-item3 .slider {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1070px) {
+  body .section2 .section2-container .section2-item3 .slider {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 980px) {
+  body .menu .menu-container .hamburguer-menu {
+    display: block;
+  }
+  body .menu .menu-container nav {
+    display: none;
+  }
+  body .section2 .section2-container .section2-item3 .slider {
+    max-width: 700px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

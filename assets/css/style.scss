@@ -71,6 +71,13 @@ body{
         .menu-right a:hover{
             color: $cian-main;
         }
+
+
+        .hamburguer-menu{
+            width: 70px;
+            height: 70px;
+            background-color: red;
+        }
     }
 }
 
@@ -474,7 +481,7 @@ body{
 
 .section4{
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 200px 0px 0px;
     .section4-container{
         max-width: 1180px;
@@ -744,3 +751,5 @@ body{
         }
     }
 }
+
+@import './sass/_responsive.scss';
