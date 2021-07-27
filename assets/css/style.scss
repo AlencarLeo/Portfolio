@@ -346,12 +346,14 @@ body{
                     cursor: pointer;
                     transition: .5s;
     
-                    &:hover img{
+                    &:hover img,
+                    &.click-div img{
                         transform: translate(-50%, -120px);
                         opacity: 0;
                     }
     
-                    &:hover p{
+                    &:hover p,
+                    &.click-div p{
                         transform: translate(-50%, -205px);
                         opacity: 1;
                     }

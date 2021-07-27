@@ -1,30 +1,28 @@
 export default function initHambMenu(){
+    const menu = document.querySelector('.hamburguer-menu');
+    const hamburguer = document.querySelector('.hamburguer');
 
-}
+    const header = document.querySelector('.menu-container');
 
-const menu = document.querySelector('.hamburguer-menu');
-const hamburguer = document.querySelector('.hamburguer');
+    const sections = document.querySelectorAll('.menu-container nav a');
 
-const header = document.querySelector('.menu-container');
+    function handleBurguer(){
+        hamburguer.classList.toggle('close');
+        header.classList.toggle('close');
+    }
 
-const sections = document.querySelectorAll('.menu-container nav a');
-
-function handleBurguer(){
-    hamburguer.classList.toggle('close');
-    header.classList.toggle('close');
-}
-
-['click', 'touchstart'].forEach((userEvent)=>{
-    menu.addEventListener(userEvent, handleBurguer);
-})
-
-function handleClose(){
-    hamburguer.classList.remove('close');
-    header.classList.remove('close');
-}
-
-['click', 'touchstart'].forEach((userEvent)=>{
-    sections.forEach((section)=>{
-        section.addEventListener(userEvent, handleClose);
+    ['click', 'touchstart'].forEach((userEvent)=>{
+        menu.addEventListener(userEvent, handleBurguer);
     })
-})
+
+    function handleClose(){
+        hamburguer.classList.remove('close');
+        header.classList.remove('close');
+    }
+
+    ['click', 'touchstart'].forEach((userEvent)=>{
+        sections.forEach((section)=>{
+            section.addEventListener(userEvent, handleClose);
+        })
+    })
+}

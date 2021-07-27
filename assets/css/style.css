@@ -565,13 +565,15 @@ body {
   transition: .5s;
 }
 
-.section2 .section2-container .section2-item3 .slider .know:hover img {
+.section2 .section2-container .section2-item3 .slider .know:hover img,
+.section2 .section2-container .section2-item3 .slider .know.click-div img {
   -webkit-transform: translate(-50%, -120px);
           transform: translate(-50%, -120px);
   opacity: 0;
 }
 
-.section2 .section2-container .section2-item3 .slider .know:hover p {
+.section2 .section2-container .section2-item3 .slider .know:hover p,
+.section2 .section2-container .section2-item3 .slider .know.click-div p {
   -webkit-transform: translate(-50%, -205px);
           transform: translate(-50%, -205px);
   opacity: 1;
