@@ -45,6 +45,25 @@
 
 @media(max-width: 1070px){
     body{
+        .section1{
+            .section1-container{
+                .section1-item2{
+                    max-width: 400px;
+                    h2{
+                        font-size: 3rem;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .section1-item3 svg{
+                    max-width: 150px;
+                }
+            }
+        }
         .section2{
             .section2-container{
                 .section2-item3{

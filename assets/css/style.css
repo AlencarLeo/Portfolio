@@ -1129,6 +1129,21 @@ body {
 }
 
 @media (max-width: 1070px) {
+  body .section1 .section1-container .section1-item2 {
+    max-width: 400px;
+  }
+  body .section1 .section1-container .section1-item2 h2 {
+    font-size: 3rem;
+  }
+  body .section1 .section1-container .section1-item2 h3 {
+    font-size: 1.5rem;
+  }
+  body .section1 .section1-container .section1-item2 p {
+    font-size: 1rem;
+  }
+  body .section1 .section1-container .section1-item3 svg {
+    max-width: 150px;
+  }
   body .section2 .section2-container .section2-item3 .slider {
     max-width: 800px;
   }

@@ -7,7 +7,7 @@ const hamburguer = document.querySelector('.hamburguer');
 
 const header = document.querySelector('.menu-container');
 
-const sections = document.querySelector('.menu-container nav a');
+const sections = document.querySelectorAll('.menu-container nav a');
 
 function handleBurguer(){
     hamburguer.classList.toggle('close');
@@ -20,7 +20,7 @@ function handleBurguer(){
 
 function handleClose(){
     hamburguer.classList.remove('close');
-    header.classList.toggle('close');
+    header.classList.remove('close');
 }
 
 ['click', 'touchstart'].forEach((userEvent)=>{
