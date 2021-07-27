@@ -61,15 +61,92 @@
     body{
         .menu{
             .menu-container{
+                display: block;
+                height: 0;
+                width: 0;
+                
+                
                 .hamburguer-menu{
                     display: block;
+                    position: fixed;
+                    top: 30px;
+                    right: 40px;
+                    z-index: 3;
                 }
-                
+
                 nav{
                     display: none;
                 }
+
+                .menu-logo{
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+            }
+
+
+            .menu-container.close{
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                z-index: 2;
+                background-color: $black-light;
+                
+                
+                .hamburguer-menu{
+                    display: block;
+                    position: fixed;
+                    top: 30px;
+                    right: 40px;
+                    z-index: 3;
+                }
+                
+                .menu-left a+a,
+                .menu-right a+a{
+                    margin-left: 0;
+                }
+
+                nav{
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .menu-left{
+                    margin-top: 200px;
+
+                    a{
+                        font-size: 2rem;
+                        font-weight: 400;
+                        margin-top: 40px;
+                        padding: 20px 100%;
+                    }
+                }
+                .menu-right{                    
+                    a{
+                        font-size: 2rem;
+                        font-weight: 400;
+                        margin-top: 40px;
+                        padding: 20px 100%;
+                    }
+                }
+
+                .menu-logo{
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
             }
         }
+
+
+
         .section2{
             .section2-container{
                 .section2-item3{

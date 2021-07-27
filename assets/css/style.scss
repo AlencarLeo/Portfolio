@@ -74,9 +74,41 @@ body{
 
 
         .hamburguer-menu{
-            width: 70px;
-            height: 70px;
-            background-color: red;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            padding: 15px 0;
+            display: none;
+
+            .hamburguer{
+                width: 60px;
+                height: 10px;
+                position: relative;
+                background-color: $white-light;
+                transition: all .3s;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 10px;
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    background-color: $white-light;
+                    transition: all .3s;
+                }
+            
+                &.close{
+                    transform: rotate(-45deg);
+                    
+                    &::after{
+                        width: 60px;
+                        transform: rotate(-90deg);
+                        top: 0;
+                    }
+                }
+            }
         }
     }
 }

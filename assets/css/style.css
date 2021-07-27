@@ -113,9 +113,45 @@ body {
 }
 
 .menu .menu-container .hamburguer-menu {
-  width: 70px;
-  height: 70px;
-  background-color: red;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 15px 0;
+  display: none;
+}
+
+.menu .menu-container .hamburguer-menu .hamburguer {
+  width: 60px;
+  height: 10px;
+  position: relative;
+  background-color: #fefefe;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu .menu-container .hamburguer-menu .hamburguer::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #fefefe;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu .menu-container .hamburguer-menu .hamburguer.close {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu .menu-container .hamburguer-menu .hamburguer.close::after {
+  width: 60px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 0;
 }
 
 .section1 {
@@ -1099,11 +1135,84 @@ body {
 }
 
 @media (max-width: 980px) {
+  body .menu .menu-container {
+    display: block;
+    height: 0;
+    width: 0;
+  }
   body .menu .menu-container .hamburguer-menu {
     display: block;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 3;
   }
   body .menu .menu-container nav {
     display: none;
+  }
+  body .menu .menu-container .menu-logo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  body .menu .menu-container.close {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #252525;
+  }
+  body .menu .menu-container.close .hamburguer-menu {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 3;
+  }
+  body .menu .menu-container.close .menu-left a + a,
+  body .menu .menu-container.close .menu-right a + a {
+    margin-left: 0;
+  }
+  body .menu .menu-container.close nav {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .menu .menu-container.close .menu-left {
+    margin-top: 200px;
+  }
+  body .menu .menu-container.close .menu-left a {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 40px;
+    padding: 20px 100%;
+  }
+  body .menu .menu-container.close .menu-right a {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 40px;
+    padding: 20px 100%;
+  }
+  body .menu .menu-container.close .menu-logo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
   body .section2 .section2-container .section2-item3 .slider {
     max-width: 700px;
