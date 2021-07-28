@@ -556,7 +556,7 @@ body {
   display: flex;
   background-color: #252525;
   min-width: 200px;
-  min-height: 200px;
+  height: 200px;
   margin: auto 20px;
   position: relative;
   border-radius: 10px;
@@ -1231,8 +1231,146 @@ body {
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
   }
+  body .section2 .section2-container .section2-item2 {
+    display: none;
+  }
   body .section2 .section2-container .section2-item3 .slider {
     max-width: 700px;
+  }
+  body .section4 .section4-container {
+    display: block;
+  }
+  body .section4 .section4-container .section4-item1 form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section4 .section4-container .section4-item1 form .position-email {
+    margin-top: 55px;
+  }
+  body .section4 .section4-container .section4-item2 {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  body .section1 .section1-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+  }
+  body .section1 .section1-container .section1-item1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .section1 .section1-container .section1-item1 a {
+    margin: 0 20px;
+  }
+  body .section1 .section1-container .section1-item1 a i {
+    font-size: 40px;
+  }
+  body .section1 .section1-container .section1-item1 a i:hover {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  body .section1 .section1-container .section1-item1 a + a {
+    margin-top: 0;
+  }
+  body .section1 .section1-container .section1-item2 {
+    max-width: 500px;
+  }
+  body .section1 .section1-container .section1-item2 h2 {
+    font-size: 2rem;
+  }
+  body .section1 .section1-container .section1-item2 h3 {
+    font-size: 1.125rem;
+  }
+  body .section1 .section1-container .section1-item2 p {
+    font-size: 1rem;
+  }
+  body .section1 .section1-container .section1-item3 {
+    display: none;
+  }
+  body .section2 .section2-container {
+        grid-template-areas: "about about" "know know";
+  }
+  body .section2 .section2-container .section2-item1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: about;
+  }
+  body .section2 .section2-container .section2-item3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: know;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .section2 .section2-container .section2-item3 svg {
+    position: absolute;
+    top: -70px;
+    left: -140px;
+  }
+  body .section2 .section2-container .section2-item3 .button {
+    display: none;
+  }
+  body .section2 .section2-container .section2-item3 #previous {
+    display: none;
+  }
+  body .section2 .section2-container .section2-item3 #next {
+    display: none;
+  }
+  body .section2 .section2-container .section2-item3 .slider {
+    width: 100%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+    row-gap: 20px;
+  }
+  body .section2 .section2-container .section2-item3 .slider .know {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #252525;
+    min-width: 170px;
+    height: 100px;
+    margin: auto 20px;
+    position: relative;
+  }
+  body .section2 .section2-container .section2-item3 .slider .know img {
+    max-width: 50px;
+  }
+  body .section2 .section2-container .section2-item3 .slider .know p {
+    font-size: 1rem;
+  }
+  body .section3 .section3-container .section3-item1 ul li a::after {
+    width: 100%;
+  }
+  body .section3 .section3-container .section3-item1 ul li a img {
+    display: none;
+  }
+  body .section3 .section3-container .section3-item2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

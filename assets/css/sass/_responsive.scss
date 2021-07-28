@@ -168,6 +168,9 @@
 
         .section2{
             .section2-container{
+                .section2-item2{
+                    display: none;
+                }
                 .section2-item3{
                     .slider{
                         max-width: 700px;
@@ -175,5 +178,148 @@
                 }
             }
         }
+    
+        .section4{
+            .section4-container{
+                display: block;
+                .section4-item1{
+                    form{
+                        max-width: 600px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .position-email{
+                            margin-top: 55px;
+                        }
+                    }
+                }
+                .section4-item2{
+                    display: none;
+                }
+            }                
+        }
+    }
+}
+
+
+@media(max-width: 880px){
+    body{
+        
+        .section1{
+            .section1-container{
+                flex-direction: column-reverse;
+                justify-content: space-evenly;
+                height: 100%;
+                .section1-item1{
+                    flex-direction: row;
+                    a{
+                        i{
+                            font-size: 40px;
+            
+                            &:hover{
+                                transform: translateY(-25px);
+                            }
+                        }
+                        margin: 0 20px;
+                    }
+                    a+a{
+                        margin-top: 0;
+                    }
+                }
+                .section1-item2{
+                    max-width: 500px;
+                    h2{
+                        font-size: 2rem;
+                    }
+                    h3{
+                        font-size: 1.125rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .section1-item3{
+                    display: none;
+                }
+            }
+        }
+        .section2{
+            .section2-container{
+                grid-template-areas: 
+                "about about"
+                "know know"
+                ;
+                .section2-item1{
+                    grid-area: about;
+                }
+                .section2-item3{
+                    grid-area: know;
+                    position: relative;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    svg{
+                        position: absolute;
+                        top: -70px;
+                        left: -140px;
+                    }
+        
+                    .button{
+                        display: none;
+                    }
+                    #previous{
+                        display: none;
+                    }
+                    #next{
+                        display: none;
+                    }
+        
+                    .slider{
+                        width: 100%;
+                        margin: 0 auto;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        padding: 20px 0;
+                        row-gap: 20px;
+        
+                        .know{
+                            display: flex;
+                            background-color: $black-light;
+                            min-width: 170px;
+                            height: 100px;
+                            margin: auto 20px;
+                            position: relative;
+                        
+                            img{
+                                max-width: 50px;
+                            }
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section3{
+            .section3-container{
+                .section3-item1{
+                    ul li a{
+                        &::after{
+                            width: 100%;
+                        }
+                        img{
+                            display: none;
+                        }
+                    }
+                }
+                .section3-item2{
+                    display: none;
+                }
+            }
+        }
+
     }
 }
