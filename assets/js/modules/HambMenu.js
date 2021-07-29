@@ -9,13 +9,9 @@ export default function initHambMenu(){
     function handleBurguer(){
         hamburguer.classList.add('close');
         header.classList.add('close');
-        if(header.classList.contains('close') && hamburguer.classList.contains('close')){
-            hamburguer.classList.remove('close');
-            header.classList.remove('close');
-        }
     }
 
-    ['click', 'touchstart'].forEach((userEvent)=>{
+    ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
         menu.addEventListener(userEvent, handleBurguer);
     })
 
