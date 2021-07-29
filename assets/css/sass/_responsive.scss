@@ -78,6 +78,11 @@
 
 @media(max-width: 980px){
     body{
+        #splash-screen{
+            svg{
+                max-width: 150px;
+            }
+        }
         .menu{
             .menu-container{
                 display: block;
@@ -192,6 +197,9 @@
                         .position-email{
                             margin-top: 55px;
                         }
+                        .submit{
+                            margin-bottom: 20px;
+                        }
                     }
                 }
                 .section4-item2{
@@ -205,6 +213,11 @@
 
 @media(max-width: 880px){
     body{
+        #splash-screen{
+            svg{
+                max-width: 100px;
+            }
+        }
         
         .section1{
             .section1-container{
