@@ -1037,6 +1037,7 @@ body {
 }
 
 .footer {
+  margin-top: 40px;
   position: relative;
   width: 100%;
   min-height: 200px;
@@ -1317,6 +1318,7 @@ body {
     height: 100%;
   }
   body .section1 .section1-container .section1-item1 {
+    margin-bottom: 5rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

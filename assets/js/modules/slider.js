@@ -51,7 +51,7 @@ btns.forEach((btn)=>{
                         translatex -=270;
                     }
                 }
-            }else if(window.innerWidth <= 980){
+            }else if(window.innerWidth <= 980 && window.innerWidth > 880){
                 if(event.target.id == 'previous' || event.target.classList.contains("fa-chevron-left")){
                     if(index != 1){
                         index--;
