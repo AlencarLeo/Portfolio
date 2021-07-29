@@ -11,7 +11,7 @@ export default function initHambMenu(){
         header.classList.toggle('close');
     }
 
-    ['click', 'touchstart'].forEach((userEvent)=>{
+    ['click'].forEach((userEvent)=>{
         menu.addEventListener(userEvent, handleBurguer);
     })
 

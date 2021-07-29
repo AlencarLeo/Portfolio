@@ -274,9 +274,7 @@
                     height: auto;
                     display: block;
                     svg{
-                        position: absolute;
-                        top: -70px;
-                        left: -140px;
+                        display: none;
                     }
         
                     .button{
@@ -322,7 +320,7 @@
                 .section3-item1{
                     ul li a{
                         &::after{
-                            width: 100%;
+                            width: 200px;
                         }
                         img{
                             display: none;
