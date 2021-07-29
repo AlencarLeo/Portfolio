@@ -16,6 +16,6 @@ function animeScroll(){
     });
 }
 
-animeScroll();
+setTimeout(animeScroll, 4500);
 
 window.addEventListener('scroll', animeScroll);
