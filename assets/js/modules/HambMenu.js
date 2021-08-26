@@ -7,15 +7,8 @@ export default function initHambMenu(){
     const sections = document.querySelectorAll('.menu-container nav a');
 
     function handleBurguer(){
-        hamburguer.classList.add('close');
-        header.classList.add('close');
-
-            ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
-            menu.addEventListener(userEvent, ()=>{
-                hamburguer.classList.toggle('close');
-                header.classList.toggle('close');
-            });
-        })
+        hamburguer.classList.toggle('close');
+        header.classList.toggle('close');
     }
 
     ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
