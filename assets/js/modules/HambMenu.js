@@ -10,7 +10,7 @@ export default function initHambMenu(){
         hamburguer.classList.add('close');
         header.classList.add('close');
 
-        ['click', 'touchstart'].forEach((userEvent)=>{
+            ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
             menu.addEventListener(userEvent, ()=>{
                 hamburguer.classList.toggle('close');
                 header.classList.toggle('close');
@@ -18,7 +18,7 @@ export default function initHambMenu(){
         })
     }
 
-    ['click', 'touchstart'].forEach((userEvent)=>{
+    ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
         menu.addEventListener(userEvent, handleBurguer);
     })
 
@@ -27,7 +27,7 @@ export default function initHambMenu(){
         header.classList.remove('close');
     }
 
-    ['click', 'touchstart'].forEach((userEvent)=>{
+    ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
         sections.forEach((section)=>{
             section.addEventListener(userEvent, handleClose);
         })
