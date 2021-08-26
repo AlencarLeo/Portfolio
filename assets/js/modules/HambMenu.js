@@ -27,7 +27,7 @@ export default function initHambMenu(){
         header.classList.remove('close');
     }
 
-    ['click'/*, 'touchstart'*/].forEach((userEvent)=>{
+    ['click', 'touchstart'].forEach((userEvent)=>{
         sections.forEach((section)=>{
             section.addEventListener(userEvent, handleClose);
         })
