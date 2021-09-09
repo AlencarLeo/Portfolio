@@ -1,11 +1,4 @@
 <p align="center">
-  <img width=20px src="assets/readme/attencion.svg">
-  <b>ON PROGRESS...</b>
-  <img width=20px src="assets/readme/attencion.svg">
-</p>
-<br>
-<br>
-<p align="center">
   <img src="assets/readme/LA.svg">
 </p>
 <h1 align="center">Portfolio LA | Leonardo Alencar</h1>
