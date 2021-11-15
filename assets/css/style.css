@@ -597,6 +597,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 1.125rem;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   background: linear-gradient(150deg, #08FFFF, #008181);
